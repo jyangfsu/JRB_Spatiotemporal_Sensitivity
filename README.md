@@ -21,41 +21,13 @@ This study proposes a two-step deep learning-assisted time-varying spatial sensi
 
 A typical FigureX/ folder contains:
 
-Input data required for that figure (parameter sets, model outputs, sensitivity indices, etc.)
+- Input data required for that figure (parameter sets, model outputs, sensitivity indices, etc.)
 
-Analysis scripts / notebooks to compute indices and generate plots
+- Analysis scripts / notebooks to compute indices and generate plots
 
-Example outputs (figures or intermediate result files)
+- Example outputs (figures or intermediate result files)
 
-The lib/ directory contains reusable modules, for example:
-
-Utility functions for plotting and post-processing
-
-## ⚙️ Analysis Workflow
-
-At a high level, the workflow is:
-
-Global screening
-
-Use a spatially lumped Morris method to identify influential SWAT parameters.
-
-Surrogate model training
-
-Train multilayer perceptron (MLP) surrogates for subbasin-scale and HRU-scale parameter sets.
-
-Validate surrogates against SWAT-simulated runoff.
-
-Time-varying SSA
-
-Compute Nash–Sutcliffe efficiency-based Sobol indices over 3-month and 24-month rolling windows.
-
-Analyze how parameter sensitivities change across space and time.
-
-Visualization
-
-Map spatial sensitivity hotspots and plot temporal evolution of dominant parameters to reproduce Figures 1–7.
-
-Scripts for each step are organized within the corresponding figure folders and call the shared routines in lib/.
+The lib/ directory contains reusable modules, for example: Utility functions for plotting and post-processing.
 
 ## 🛠 Requirements
 
@@ -79,15 +51,15 @@ torch (PyTorch, for deep learning surrogates)
 
 ## 📌 Key Features
 
-Two-step framework combining global screening and deep learning-assisted Sobol analysis
+- Two-step framework combining global screening and deep learning-assisted Sobol analysis
 
-Multi-scale parameterization at subbasin and hydrological response unit levels
+- Multi-scale parameterization at subbasin and hydrological response unit levels
 
-Time-varying sensitivity indices using rolling windows to capture nonstationary behavior
+- Time-varying sensitivity indices using rolling windows to capture nonstationary behavior
 
-Identification of sensitivity hotspots and hot moments, supporting targeted calibration and monitoring design
+- Identification of sensitivity hotspots and hot moments, supporting targeted calibration and monitoring design
 
-Fully organized repository enabling figure-by-figure reproducibility
+- Fully organized repository enabling figure-by-figure reproducibility
 
 ## 🌍 Broader Applications
 
@@ -107,9 +79,8 @@ Yang, J. et al., 2025. Identifying Dominant Parameters Across Space and Time at 
 
 ## 📬 Contact
 
-For questions, please contact:
-
-Jing Yang
-School of Land Engineering, Chang’an University
+For questions, please contact:  
+**Jing Yang**  
+School of Land Engineering, Chang’an University 
 
 Email: jing.yang@126.com

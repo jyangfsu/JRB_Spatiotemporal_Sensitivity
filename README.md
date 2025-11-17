@@ -1,12 +1,13 @@
 This repository contains the data, code, and documentation supporting the study:
 
-Yang, J. et al., 2025. "Identifying Dominant Parameters Across Space and Time at Multiple Scales in a Distributed Model Using a Two-Step Deep Learning-Assisted Time-Varying Spatial Sensitivity Analysis" (submitted for publication in HESS).
+Yang, J. et al., 2025. **"Identifying Dominant Parameters Across Space and Time at Multiple Scales in a Distributed Model Using a Two-Step Deep Learning-Assisted Time-Varying Spatial Sensitivity Analysis"** (submitted for publication in HESS).
 
-🧭 Overview
+## 🧭 Overview
 
 This study proposes a two-step deep learning-assisted time-varying spatial sensitivity analysis (SSA) framework for distributed hydrological models. Using the Soil and Water Assessment Tool (SWAT) for the Jinghe River Basin, we first use a global screening step to identify influential parameters, and then apply deep learning-assisted Sobol analysis to quantify how parameter importance evolves across space (subbasins and hydrological response units) and time (rolling windows). The framework reveals scale-dependent sensitivity hotspots and hot moments that guide targeted calibration and more reliable water management.
 
-📁 Repository Structure
+## 📁 Repository Structure
+```bash
 📂 TwoStep_DL_TimeVarying_SSA/
 ├── Figure1/                      # Data and scripts used to generate Figure 1
 ├── Figure2/                      # Data and scripts used to generate Figure 2
@@ -16,7 +17,7 @@ This study proposes a two-step deep learning-assisted time-varying spatial sensi
 ├── Figure6/                      # Data and scripts used to generate Figure 6
 ├── Figure7/                      # Data and scripts used to generate Figure 7
 └── lib/                          # Shared functions and modules used across figures
-
+```
 
 A typical FigureX/ folder contains:
 
@@ -30,7 +31,7 @@ The lib/ directory contains reusable modules, for example:
 
 Utility functions for plotting and post-processing
 
-⚙️ Analysis Workflow
+## ⚙️ Analysis Workflow
 
 At a high level, the workflow is:
 
@@ -56,7 +57,7 @@ Map spatial sensitivity hotspots and plot temporal evolution of dominant paramet
 
 Scripts for each step are organized within the corresponding figure folders and call the shared routines in lib/.
 
-🛠 Requirements
+## 🛠 Requirements
 
 The code primarily uses Python; some steps may also use SWAT or MATLAB/R depending on your setup.
 
@@ -76,7 +77,7 @@ SALib (for global sensitivity analysis)
 torch (PyTorch, for deep learning surrogates)
 
 
-📌 Key Features
+## 📌 Key Features
 
 Two-step framework combining global screening and deep learning-assisted Sobol analysis
 
@@ -88,7 +89,7 @@ Identification of sensitivity hotspots and hot moments, supporting targeted cali
 
 Fully organized repository enabling figure-by-figure reproducibility
 
-🌍 Broader Applications
+## 🌍 Broader Applications
 
 The framework and code structure can be adapted to:
 
@@ -98,13 +99,13 @@ Spatiotemporal sensitivity analysis in ecohydrology, water quality, or land–at
 
 Any model where parameter importance varies across both space and time and computational cost is high.
 
-📜 Citation
+## 📜 Citation
 
 If you use this repository, please cite:
 
 Yang, J. et al., 2025. Identifying Dominant Parameters Across Space and Time at Multiple Scales in a Distributed Model Using a Two-Step Deep Learning-Assisted Time-Varying Spatial Sensitivity Analysis. (in review, HESS).
 
-📬 Contact
+## 📬 Contact
 
 For questions, please contact:
 

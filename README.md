@@ -16,8 +16,8 @@ Understanding how rainfall becomes river flow is essential for effective water m
 ├── Figure5/                      # Data and scripts used to generate Figure 5
 ├── Figure6/                      # Data and scripts used to generate Figure 6
 ├── Figure7/                      # Data and scripts used to generate Figure 7
-├── Figure8/                      # Data and scripts used to generate Figure 7
-├── Figure9/                      # Data and scripts used to generate Figure 7
+├── Figure8/                      # Data and scripts used to generate Figure 8
+├── Figure9/                      # Data and scripts used to generate Figure 9
 └── lib/                          # Shared functions and modules used across figures
 ```
 

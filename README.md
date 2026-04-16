@@ -57,9 +57,7 @@ torch (PyTorch, for deep learning surrogates)
 
 - Multi-scale parameterization at subbasin and hydrological response unit levels
 
-- Time-varying sensitivity indices using rolling windows to capture nonstationary behavior
-
-- Identification of sensitivity hotspots and hot moments, supporting targeted calibration and monitoring design
+- Identification of sensitivity hotspots, supporting targeted calibration and monitoring design
 
 - Fully organized repository enabling figure-by-figure reproducibility
 
@@ -77,7 +75,7 @@ Any model where parameter importance varies across both space and time and compu
 
 If you use this repository, please cite:
 
-Yang, J. et al., 2025. Identifying Dominant Parameters Across Space and Time at Multiple Scales in a Distributed Model Using a Two-Step Deep Learning-Assisted Time-Varying Spatial Sensitivity Analysis. (in review, HESS).
+Yang, J. et al., 2025. Identifying Dominant Parameters in SWAT Across Subbasin and HRU Scales Using a Two-Step Deep Learning-Assisted Spatial Sensitivity Analysis. (in review, HESS).
 
 ## 📬 Contact
 

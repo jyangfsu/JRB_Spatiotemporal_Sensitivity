@@ -1,14 +1,14 @@
 This repository contains the data, code, and documentation supporting the study:
 
-Yang, J. et al., 2025. **"Identifying Dominant Parameters Across Space and Time at Multiple Scales in a Distributed Model Using a Two-Step Deep Learning-Assisted Time-Varying Spatial Sensitivity Analysis"** (submitted for publication in HESS).
+Yang, J. et al., 2025. **"Identifying Dominant Parameters in SWAT Across Subbasin and HRU Scales Using a Two-Step Deep Learning-Assisted Spatial Sensitivity Analysis"** (submitted for publication in HESS).
 
 ## 🧭 Overview
 
-This study proposes a two-step deep learning-assisted time-varying spatial sensitivity analysis (SSA) framework for distributed hydrological models. Using the Soil and Water Assessment Tool (SWAT) for the Jinghe River Basin, we first use a global screening step to identify influential parameters, and then apply deep learning-assisted Sobol analysis to quantify how parameter importance evolves across space (subbasins and hydrological response units) and time (rolling windows). The framework reveals scale-dependent sensitivity hotspots and hot moments that guide targeted calibration and more reliable water management.
+Understanding how rainfall becomes river flow is essential for effective water management, yet complex computer models are often difficult to interpret. This study developed an efficient approach, supported by artificial intelligence, to identify where and how key model parameters influence river flow across different scales. The results reveal clear spatial differences and highlight critical areas controlling runoff, improving model reliability and supporting better water management decisions.
 
 ## 📁 Repository Structure
 ```bash
-📂 TwoStep_DL_TimeVarying_SSA/
+📂 TwoStep_DL_SSA/
 ├── Figure1/                      # Data and scripts used to generate Figure 1
 ├── Figure2/                      # Data and scripts used to generate Figure 2
 ├── Figure3/                      # Data and scripts used to generate Figure 3
@@ -16,6 +16,8 @@ This study proposes a two-step deep learning-assisted time-varying spatial sensi
 ├── Figure5/                      # Data and scripts used to generate Figure 5
 ├── Figure6/                      # Data and scripts used to generate Figure 6
 ├── Figure7/                      # Data and scripts used to generate Figure 7
+├── Figure8/                      # Data and scripts used to generate Figure 7
+├── Figure9/                      # Data and scripts used to generate Figure 7
 └── lib/                          # Shared functions and modules used across figures
 ```
 
